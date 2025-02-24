@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet">
+    <title>Landing</title>
+</head>
+<body>
+    <div id ="container">
+        <div class="header">
+
+       <div class='image'> <img src ="./footage/tesla.png" ></div>
+        <div class ="nav-links">
+            <ul>
+                <li><a href="https://google.com" target ="_blank">header link one</a></li>
+                <li><a href="https://github.com" target ="_blank">header link two</a></li>
+                <li><a href="https://gmail.com" target ="_blank" >header link three</a></li>
+            </ul>
+        </div>
+    </div>    
+    <div class ="introduction">
+        <div class ="context">
+
+            <h1>This website is awesome</h1>
+            <p>This website has some text that goes here under the main title. 
+                It's a smaller font and the color is lower contrast.</p>
+            <button class="sign-up">Sign up</button>   
+        </div>
+            <div class ="img-container"><img title="image goes here" src ="footage/images/photo1.jpg">  </div>   
+        </div> 
+    <div class = "random-facts">
+        <h2>Some random facts!</h2>
+
+        <div class ="placeholder-container">
+            <div class ="placeholder">
+                <div class ="fact-image"></div>
+                <div class="text">This is a type of plant. We love this one.</div>
+            </div>    
+            
+            <div class ="placeholder">
+                <div class ="fact-image"></div>
+                <div class="text">This is another type of plant. Isn't it nice</div>
+            </div>    
+            
+            <div class ="placeholder">
+                <div class ="fact-image"></div>
+                <div class="text">We have so many plants. Yay plants.</div>
+            </div>    
+            
+            <div class ="placeholder">
+                <div class ="fact-image"></div>
+                <div class="text">I'm running out of things to say about plants.</div>
+            </div>
+        </div> 
+    </div>
+    <div class =quote>
+        <cite>The object of life is not to be on the side of the majority, but to escape finding oneself in the ranks of the insane.</cite>
+        <p>-Marcus Aurelius</p>
+    </div>
+    <div class = "actionCall">
+        <div class ="text">
+             <h3>Call to action! It's time!</h3>
+             <p> Sign up for our product by clicking that button right over there!</p>    
+       </div>
+    <button>Sign up</button>
+    </div>
+
+    <footer class ="footer">Copyright Krish Devkota 2022</footer>
+</div>
+</body>
+
+<style>
+    *{
+    margin: 0;
+}
+
+
+#container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around; 
+    
+}
+
+*{
+    scroll-behavior:smooth;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.image>img{
+     height: 50px;
+     width:auto;
+     margin: 0;
+     padding: 10px 5px;
+     
+}
+
+
+.header{
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 50px; */
+    width : 100%;
+    margin-top: -10px;
+}
+
+.nav-links {
+    margin-right : 5px;
+}
+.nav-links ul{
+    display:flex;
+    gap: 15px;
+}
+
+/* second section */
+
+.introduction p,
+.introduction h1{
+    color: white;
+}
+.introduction {
+    
+    background-color:#1F2937;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding: 25px 0px;
+    width:100%;
+ } 
+
+
+
+.context {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+.context h1{
+    margin: 10px 0;
+    padding: 0;
+}
+
+.context button, input[type="submit"]{
+    all : unset;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: #3882F6;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+
+.img-container img{
+    height: 100%;
+    width:100%;
+    object-fit:cover;
+}
+
+.img-container {
+    width:450px;
+    height: 350px;
+   
+}
+
+
+
+.introduction button {
+    margin-right: auto;
+}
+
+/* 3rd section */
+
+ .random-facts{
+     background-color: #ededee;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 -90px;
+    padding: 20px 0px;
+    width:100%;
+} 
+
+.random-facts>h2{
+    font-style:roboto, sans-serif;
+    font-weight:bolder;
+    font-size: 36px;
+    color: #1F2937;
+    margin: 20px 0;
+    
+}
+
+.placeholder-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+}
+
+.placeholder{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+     width: 150px;
+}
+
+.fact-image{
+     width: 100px; 
+    height: 125px;
+    border: 5px solid blue;
+    border-radius: 8px;
+}
+
+.fact-image img{
+    width: 100%;
+    height: 100%;
+     object-fit: contain; 
+} 
+
+ .text{
+    text-align: center;
+} 
+
+/* quote section */
+
+/* .quote{
+    padding: 80px;
+    background-color:#E5E7EB;
+    display: flex;
+    
+    font-style:roboto, sans-serif;
+    font-weight: 400;
+    width: 100%;
+} */
+/* CLoned 2nd section with third  */
+.quote{
+    background-color: #E5E7EB;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+   align-items: center;
+   font-style:roboto, sans-serif;
+    font-weight: 400;
+   margin: 0 -90px;
+   padding: 20px 0px;
+   width:100%;
+} 
+
+
+cite{
+    margin: 10px 0;
+    width: fit-content;
+}
+
+.quote p{
+    /* margin-left : 400px; */
+    font-weight: 900;
+}
+
+/* action call */
+
+.actionCall{  
+    display: flex;
+    margin: 50px auto;
+    background-color: rgb(159, 209, 255);
+    padding: 70px 20px;
+    border-radius: 10px;
+    gap: 0 50px;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.actionCall>.text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+ .actionCall button{
+    all : unset;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color:white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+
+} 
+
+button:focus{
+    outline: #274c88 2px solid; 
+}
+
+button:hover {
+    background-color:rgb(82, 82, 205);
+}
+
+footer{
+    background-color:#1F2937;
+    color: white;
+    padding: 20px 0px; 
+    width:100%;
+    text-align:center;
+    margin-bottom: -90px;
+}
+</style>
+</html>
